@@ -23,6 +23,7 @@ const createAutoComplete = ({root, renderOption, onOptionSelect, inputValue, fet
         
         resultsWrapper.innerHTML = "";
         dropdown.classList.add('is-active');
+        document.querySelector('.tutorial').classList.add('is-hidden')
     
         for(let item of items){
             const option = document.createElement('a')
